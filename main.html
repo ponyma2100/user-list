@@ -1,0 +1,213 @@
+<html lang="en">
+
+<head>
+  <title>USER LIST</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="main.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Optional JavaScript -->
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">User List</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" id="mainpage"">Home
+            <span class=" sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="favorite">favorite</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-offset-3">
+          <h4>Here you can find exercise buddy</h4>
+          <p>Bring inspiration and innovation to every athlete in the world</p>
+          <div class="primary-button">
+            <span class="search-info">Search Right Now </span>
+            <div class="row" id="search-bar">
+              <form id="search" class="form-inline">
+                <input type="text" class="form-control mb-2 mr-sm-2" id="search-input" placeholder="search name ...">
+                <button type="submit" class="btn btn-primary mb-2">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="full">
+    <div class="row team_section">
+      <div class="col-sm-12 col-md-10 col-lg-10 offset-md-1 offset-lg-1">
+        <div id="demo" class="popolar_fitness carousel slide" data-ride="carousel">
+          <h2><span class="theme_color">Top Active Users</span><br></h2>
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row" id="carousel-active">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row" id="carousel">
+              </div>
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev fa-2x" href="#demo" data-slide="prev">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <a class="carousel-control-next fa-2x" href="#demo" data-slide="next"><i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="filterblock">
+    <div class="container" id="btngroup">
+      <div class="row" id="genderselector">
+        <p>Search Gender</p>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class=" btn gender-item fa-3x">
+            <!-- <button ><i class="fas fa-map-marker"></i></button> -->
+            <i class="fas fa-map-marker"></i>
+            <h4 data-item="1">All</h4>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="btn gender-item fa-3x">
+            <!-- <button data-item="2"><i class="fas fa-male"></i></button> -->
+            <i class="fas fa-male"></i>
+            <h4 data-item="2">Male</h4>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="btn gender-item fa-3x">
+            <!-- <button data-item="3"><i class="fas fa-female"></i></button> -->
+            <i class="fas fa-female"></i>
+            <h4 data-item="3">Female</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="region">
+      <p>Search Region</p>
+      <select id="country">
+        <option value="ALL">ALL</option>
+        <option value="CH">CH</option>
+        <option value="AU">AU</option>
+        <option value="CA">CA</option>
+        <option value="DE">DE</option>
+        <option value="BR">BR</option>
+        <option value="US">US</option>
+        <option value="NO">NO</option>
+        <option value="TR">TR</option>
+        <option value="ES">ES</option>
+        <option value="FI">FI</option>
+        <option value="NZ">NZ</option>
+        <option value="DK">DK</option>
+        <option value="NL">NL</option>
+        <option value="IR">IR</option>
+        <option value="IE">IE</option>
+        <option value="GB">GB</option>
+        <option value="FR">FR</option>
+      </select>
+    </div>
+  </div>
+
+
+
+  <!-- <div id="region">
+    <div class="row" id="search-bar">
+      <form id="search-region" class="form-inline">
+        <input type="text" class="form-control mb-2 mr-sm-2" id="region-input" placeholder="search region ...">
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+      </form>
+    </div>
+  </div> -->
+
+
+
+  <!-- data-panel -->
+  <div class="container mt-5">
+    <div class="function-item">
+      <div class="row d-flex justify-content-center flex-wrap" id="data-panel">
+        <!-- print User list here -->
+      </div>
+    </div>
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center" id="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="show-user-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="show-user-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body" id="show-user-body">
+            <div class="row">
+              <div class="col-sm-6" id="show-user-avatar">
+              </div>
+              <div class="col-sm-6">
+                <p id="show-user-gender"></p>
+                <p id="show-user-birthday"></p>
+                <p id="show-user-age"></p>
+                <p id="show-user-region"></p>
+                <p id="show-user-email"></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
